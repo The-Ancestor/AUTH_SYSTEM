@@ -1,0 +1,20 @@
+# Secret environment variables (CRITICAL)
+.env
+
+# Local database
+*.db
+project.db
+
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
