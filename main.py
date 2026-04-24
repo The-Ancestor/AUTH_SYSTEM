@@ -24,13 +24,13 @@ def create_app(config_class=Config):
     limiter.init_app(app) # Bug fixed!
 
     app.register_blueprint(auth_bp, url_prefix="/auth")
-
+    
+    with app.app_context() :
+         db.create_all()
+    
     return app
 
 
 if __name__ == "__main__":
     app = create_app()
-    with app.app_context() :
-         db.create_all()
-
     app.run(host="0.0.0.0", debug=True)
