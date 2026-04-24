@@ -25,3 +25,4 @@ LIVE RENDER DEPLOYMENT - https://auth-system-3aan.onrender.com/auth/
     Deployment: Render
 
     
+Example: ![Auth Flow](assets/Screenshot from 2026-04-24 20-3.png)
